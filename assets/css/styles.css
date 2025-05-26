@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    font-size: inherit;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    /* Tối ưu chữ cho MacOS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*================ Common =============== ====*/
+a {
+    text-decoration: none;
+}
+
+.line-clamp {
+    --line-clamp: 2;
+
+    display: -webkit-box;
+    line-clamp: var(--line-clamp);
+    -webkit-line-clamp: var(--line-clamp);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Tạo sẵn class để thay đổi biến --line-clamp (nếu cần) */
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+.main-container {
+    width: 1170px;
+}
