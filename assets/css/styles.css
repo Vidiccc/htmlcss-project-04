@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-size: inherit;
+    color: inherit;
 }
 
 html,
@@ -20,11 +20,26 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/*================ Common =============== ====*/
+/*========== Customized Reset CSS ============*/
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
 }
 
+/*================ Common ====================*/
 .line-clamp {
     --line-clamp: 2;
 
@@ -35,7 +50,6 @@ a {
     overflow: hidden;
 }
 
-/* Tạo sẵn class để thay đổi biến --line-clamp (nếu cần) */
 .line-clamp.line-3 {
     --line-clamp: 3;
 }
@@ -44,6 +58,142 @@ a {
     word-break: break-all;
 }
 
-.main-container {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sora", sans-serif;
+}
+
+.btn {
+    --height: 56px;
+    min-width: 117px;
+    height: var(--height);
+
+    display: inline-block;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    border-radius: 99px;
+
+    color: #ff5b2e;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: var(--height);
+
+    transition-property: background-color, color;
+    transition-duration: 0.25s;
+}
+
+.btn:hover {
+    color: #fffaf5;
+    background-color: #ff5b2e;
+}
+
+.container {
     width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/*================ Sticky Header ====================*/
+.header {
+    padding: 26px 0 8px;
+    position: sticky;
+    top: -18px;
+    left: 0;
+
+    background: #fffaf5;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar__link {
+    padding: 8px 18px;
+
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: color 0.25s, text-shadow 0.25s;
+}
+
+.navbar__link:hover {
+    color: #ff5b2e;
+    text-shadow: -0.1px -0.1px currentColor;
+}
+
+.navbar__link.active {
+    color: #000958;
+    text-shadow: -0.1px -0.1px currentColor;
+}
+
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__link {
+    padding: 8px;
+    position: relative;
+    overflow: hidden;
+
+    color: #000958;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: text-shadow 0.25s;
+}
+
+.header-action__link::before {
+    content: "";
+    width: 100%;
+    height: 1.5px;
+
+    position: absolute;
+    bottom: 0px;
+    left: -0.2px;
+    background-color: #ff5b2e;
+
+    translate: -100%;
+    transition: translate 0.25s;
+}
+
+.header-action__link:hover {
+    text-shadow: -0.1px -0.1px currentColor;
+}
+
+.header-action__link:hover::before {
+    translate: 0;
+}
+
+.header-action__btn {
+    --height: 50px;
+    border: 1px solid rgba(0, 9, 88, 0.7);
+
+    color: #000958;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.header-action__btn:hover {
+    color: #fffaf5;
+    background-color: #000958;
+}
+
+/*================ Common ====================*/
+/*================ Common ====================*/
+/*================ Common ====================*/
+/*================ Common ====================*/
+/*================ Common ====================*/
+main {
+    height: 5000px;
 }
