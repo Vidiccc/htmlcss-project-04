@@ -15,6 +15,8 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    background: #fffaf5;
+
     /* Tối ưu chữ cho MacOS */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -65,6 +67,37 @@ h4,
 h5,
 h6 {
     font-family: "Sora", sans-serif;
+    color: #000958;
+}
+
+.heading--lv2 {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.19; /* 119.231% */
+}
+
+.heading--lv3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.sub-heading--lv2 {
+    color: #5e6085;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.desc--lv1 {
+    color: #656689;
+    line-height: 1.88; /* 187.5% */
+}
+
+.desc--lv2 {
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1.71; /* 171.429% */
 }
 
 .btn {
@@ -78,9 +111,8 @@ h6 {
 
     color: #ff5b2e;
     text-align: center;
-    font-size: 1.6rem;
     font-weight: 500;
-    line-height: var(--height);
+    /* line-height: var(--height); */
 
     transition-property: background-color, color;
     transition-duration: 0.25s;
@@ -105,6 +137,7 @@ h6 {
     left: 0;
 
     background: #fffaf5;
+    z-index: 99;
 }
 
 .header__inner {
@@ -189,11 +222,243 @@ h6 {
     background-color: #000958;
 }
 
-/*================ Common ====================*/
-/*================ Common ====================*/
-/*================ Common ====================*/
-/*================ Common ====================*/
-/*================ Common ====================*/
+/*================ Hero ====================*/
+.hero {
+    padding: 92px 0 38px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Hero Media */
+.hero__media {
+    height: 582px;
+    position: relative;
+}
+
+.hero__img-wrap {
+    width: 388px;
+    height: 488px;
+    border: 3px solid #fff;
+    border-radius: 16px;
+
+    position: relative;
+    background: linear-gradient(180deg, #ffa78d 0%, #ff8c60 100%);
+    box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+}
+
+.hero__img {
+    max-width: calc(100% + 6px);
+    max-height: 100%;
+    border-radius: inherit;
+
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+    object-fit: contain;
+}
+
+.hero__decor--right {
+    position: absolute;
+    top: 17px;
+    right: -40px;
+    z-index: -1;
+}
+
+.hero__decor--left {
+    position: absolute;
+    bottom: 10px;
+    left: -58px;
+    z-index: -1;
+}
+
+.hero__img-wrap--small {
+    width: 186px;
+    height: 244px;
+    border: 2px solid rgba(255, 255, 255, 0.65);
+
+    position: absolute;
+    right: -163px;
+    bottom: 36px;
+
+    background: linear-gradient(206deg, #faa7ad 4.68%, #e87f8a 98.09%);
+    box-shadow: 8px 18px 36px -6px rgba(234, 148, 157, 0.17);
+}
+
+/* Hero List */
+.hero__list {
+    width: 250px;
+    height: 156px;
+    padding: 0 14px;
+    border-radius: 10px;
+
+    position: absolute;
+    right: 9px;
+    bottom: 0;
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero-card {
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.hero-card + .hero-card::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    border-radius: 99px;
+
+    position: absolute;
+    top: -1px;
+
+    background: #f2f2f2;
+}
+
+.hero-card__avatar-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.hero-card__avatar {
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.hero-card__avatar.avatar-01 {
+    background-color: #fec23f;
+}
+
+.hero-card__avatar.avatar-02 {
+    background: #c6e2fa;
+}
+
+.hero-card__title {
+    color: #181e52;
+    font-family: "Sora", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.hero-card__skeleton-01 {
+    margin-top: 7px;
+    width: 118px;
+    height: 4px;
+
+    border-radius: 10px;
+    background: #ebebf2;
+}
+
+.hero-card__skeleton-02 {
+    margin-top: 6px;
+    width: 39px;
+    height: 4px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    background: #ebebf2;
+}
+
+/* Hero Content */
+.hero__content {
+    width: 44%;
+    height: 440px;
+}
+
+.hero__heading {
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15; /* 115.152% */
+}
+
+.hero__desc {
+    margin-top: 24px;
+    width: 391px;
+    height: 90px;
+}
+
+.hero-cta {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero-cta__btn {
+    min-width: 189px;
+    height: 60px;
+    border-radius: 99px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: #ff5b2e;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+
+    color: #fff;
+    font-weight: 600;
+    transition: box-shadow 0.25s;
+}
+
+.hero-cta__btn svg {
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+    color: #fd5056;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.hero-cta__btn:hover {
+    box-shadow: 0 10px 18px -3px rgba(255, 91, 46, 0.6),
+        0 4px 8px -2px rgba(255, 91, 46, 0.6);
+}
+
+.hero-cta__link {
+    color: #000958;
+    font-weight: 500;
+    text-decoration-line: underline;
+    transition: letter-spacing 0.25s;
+}
+
+.hero-cta__link i {
+    rotate: 10deg;
+    animation: vibrating 1s linear infinite alternate;
+}
+
+@keyframes vibrating {
+    from {
+        rotate: 10deg;
+    }
+
+    to {
+        rotate: -10deg;
+    }
+}
+
+.hero-cta__link:hover {
+    letter-spacing: 1px;
+}
+
+.hero-cta__link:hover i {
+    animation: none;
+}
+/*================ About ====================*/
+/*================ Service ====================*/
+/*================ Staff ====================*/
+/*================ Pricing ====================*/
+/*================ Review ====================*/
+/*================ Blog ====================*/
+/*================ Footer ====================*/
 main {
     height: 5000px;
 }
