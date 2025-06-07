@@ -108,7 +108,9 @@ h6 {
     min-width: 117px;
     height: var(--height);
 
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid rgba(255, 91, 46, 0.6);
     border-radius: 99px;
 
@@ -859,6 +861,118 @@ h6 {
 }
 
 /*================ Service ====================*/
+.service {
+    padding: 68px 0 100px;
+    background: #fff6ed;
+    text-align: center;
+}
+
+.service__contents {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: 1fr 410px 1fr;
+    grid-auto-flow: column;
+    gap: 24px 82px;
+    text-align: left;
+}
+
+.service-card {
+    padding: 30px 22px 30px 28px;
+    border-radius: 10px;
+    border: 2.5px solid rgba(255, 188, 122, 0.26);
+    background: #fff;
+}
+
+.service-card__title {
+    position: relative;
+    padding-left: 14px;
+}
+
+.service-card__title::before {
+    content: "";
+    width: 2.5px;
+    border-radius: 4px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #ff5b2e 0.39%, #ffa187 100.29%);
+}
+
+.service-card__desc {
+    --line-clamp: 3;
+    margin-top: 18px;
+}
+
+.service-card__link {
+    margin-top: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    position: relative;
+    color: #34396a;
+    font-family: Sora, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1; /* 100% */
+    transition: text-shadow 0.25s;
+}
+
+.service-card__link:hover {
+    text-shadow: 0.1px 0.1px currentColor;
+}
+
+.service-card__icon {
+    transition: rotate 0.25s;
+}
+
+.service-card__link:hover .service-card__icon {
+    rotate: 45deg;
+}
+
+.service-card__link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    background-color: #ff5b2e;
+    transition: width 0.25s;
+}
+
+.service-card__link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.service__img-wrap {
+    margin-bottom: 62px;
+    width: 410px;
+    height: 350px;
+    border-radius: 10px;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    align-self: end;
+
+    position: relative;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+}
+
+.service__img {
+    width: calc(100% + 36px);
+    position: absolute;
+    right: -18px;
+    bottom: 0;
+}
+
+.service__link {
+    margin-top: -18px;
+    min-width: 214px;
+}
 /*================ Staff ====================*/
 /*================ Pricing ====================*/
 /*================ Review ====================*/
