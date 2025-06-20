@@ -304,10 +304,9 @@ h6 {
 }
 
 /* Hero List */
-.hero__list {
+.hero-list {
     width: 250px;
     height: 156px;
-    padding: 0 14px;
     border-radius: 10px;
 
     position: absolute;
@@ -315,6 +314,56 @@ h6 {
     bottom: 0;
     background: #fff;
     box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    overflow: hidden;
+}
+
+.hero-list::before {
+    content: "";
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    translate: 0% -100%;
+    background-color: #ff5b2e;
+    filter: blur(12px);
+    animation: blob-translate 8s infinite ease;
+}
+
+@keyframes blob-translate {
+    0%,
+    100% {
+        translate: -110% -100%;
+    }
+
+    20% {
+        translate: 10% -100%;
+    }
+
+    50% {
+        translate: 10% 0;
+    }
+
+    70% {
+        translate: -110% 0;
+    }
+}
+
+.hero-list__inner {
+    padding: 0 14px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    border-radius: 8px;
+
+    position: relative;
+    top: 4px;
+    left: 4px;
+    z-index: 2;
+    background-color: #fff;
+    opacity: 0.95;
 }
 
 .hero-card {
