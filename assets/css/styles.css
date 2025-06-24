@@ -925,11 +925,67 @@ h6 {
     text-align: left;
 }
 
+.service-card__wrap {
+    border-radius: 10px;
+    position: relative;
+    background-color: rgba(255, 188, 122, 0.26);
+    overflow: hidden;
+}
+
+.service-card__wrap::before {
+    content: "";
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: #ff5b2e;
+    filter: blur(12px);
+    animation: blob-translate2 7s infinite ease;
+}
+
+@keyframes blob-translate2 {
+    0%,
+    100% {
+        translate: -45% -45%;
+    }
+
+    20% {
+        translate: 80% -45%;
+    }
+
+    50% {
+        translate: 80% 45%;
+    }
+
+    70% {
+        translate: -45% 45%;
+    }
+}
+
 .service-card {
     padding: 30px 22px 30px 28px;
     border-radius: 10px;
     border: 2.5px solid rgba(255, 188, 122, 0.26);
+
     background: #fff;
+}
+
+.service-card--highlight {
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    border: none;
+    border-radius: 8px;
+
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    z-index: 2;
+    opacity: 0.95;
 }
 
 .service-card__title {
