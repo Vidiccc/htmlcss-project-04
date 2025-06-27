@@ -1706,6 +1706,72 @@ h6 {
     padding: 78px 0;
 }
 
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    width: 30%;
+    margin-right: 73px;
+}
+
+.blog__desc {
+    margin-top: initial;
+}
+
+.blog__btn {
+    margin-top: 24px;
+    min-width: 182px;
+}
+
+.blog__list {
+    margin-top: 54px;
+    display: flex;
+    gap: 48px;
+}
+
+.blog-item__media {
+    padding-top: 24px;
+    padding-left: 36px;
+    width: 358px;
+    height: 362px;
+    border-radius: 24px;
+    background: #90ccff;
+}
+
+.blog-item:nth-child(2) .blog-item__media {
+    background-color: #ff997e;
+}
+
+.blog-item:nth-child(3) .blog-item__media {
+    background-color: #5bd6e2;
+}
+
+.blog-item__date {
+    margin-bottom: 24px;
+    color: #fff;
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.21; /* 121.429% */
+}
+
+.blog-item__img {
+    width: 100%;
+    height: 297px;
+    object-fit: cover;
+}
+
+.blog-item__title {
+    margin-top: 28px;
+    line-height: 1.55; /* 154.545% */
+}
+
+.blog-item__title:hover {
+    text-shadow: 0 2px 8px rgba(100, 149, 237, 0.4); /* cornflower blue glow */
+}
+
 /*================ Footer ====================*/
 .footer {
     padding-top: 52px;
