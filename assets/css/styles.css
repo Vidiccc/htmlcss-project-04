@@ -1808,15 +1808,64 @@ h6 {
     height: 46px;
     border-radius: 23px;
     border: 1px solid rgba(255, 91, 46, 0.25);
-    opacity: 0.6;
-    background: #fff;
 
-    color: #656689;
-    font-family: Poppins;
+    position: relative;
+    outline: none;
+    background: #fff;
+    opacity: 0.6;
+
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 300;
-    line-height: 1.4rem; /* 116.667% */
+    line-height: 1.17; /* 116.667% */
+    transition: border-color 0.25s;
+}
+
+.footer__email:focus,
+.footer__email:not(:placeholder-shown) {
+    border-color: #ff5b2e;
+}
+
+.footer__email-label {
+    position: absolute;
+    top: 16px;
+    left: 22px;
+    z-index: 1;
+
+    background-color: #fff6ed;
+    background-color: #fff;
+
+    color: #656689;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.17; /* 116.667% */
+    opacity: 0.8;
+
+    pointer-events: none;
+    transition: translate 0.25s, text-shadow 0.25s;
+}
+
+.footer__email-label::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: transparent;
+}
+
+.footer__email:focus + .footer__email-label::before,
+.footer__email:not(:placeholder-shown) + .footer__email-label::before {
+    background: linear-gradient(to bottom, #fff6ed 45%, transparent 55%);
+}
+
+.footer__email:focus + .footer__email-label,
+.footer__email:not(:placeholder-shown) + .footer__email-label {
+    color: #ff5b2e;
+    translate: 0 -22px;
+    opacity: 1;
+    text-shadow: 0.3px 0.3px currentColor;
 }
 
 .footer__email-btn {
