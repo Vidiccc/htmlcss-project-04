@@ -1530,12 +1530,6 @@ h6 {
     position: relative;
 }
 
-.review__heading {
-    position: absolute;
-    top: 113px;
-    left: 41.5%;
-}
-
 .review__content {
     display: flex;
     align-items: center;
@@ -1610,7 +1604,6 @@ h6 {
     flex-shrink: 0;
 
     display: flex;
-    align-items: center;
 }
 
 .review-item__img-wrap {
@@ -1650,13 +1643,14 @@ h6 {
     bottom: 0;
 }
 
-.review-item__text-wrap {
+.review-item__content {
     margin-left: 115px;
     position: relative;
-    top: 80px;
+    top: 108px;
 }
 
 .review-item__quote {
+    margin-top: 24px;
     color: #000;
     font-size: 1.8rem;
     line-height: 1.56; /* 155.556% */
