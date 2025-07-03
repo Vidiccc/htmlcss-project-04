@@ -50,6 +50,12 @@
         <link rel="stylesheet" href="./assets/css/styles.css" />
 
         <!-- Animation -->
+        <!-- Animate.CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
         <!-- AOS -->
         <link
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
@@ -98,7 +104,7 @@
         </header>
 
         <!-- Hero -->
-        <section class="hero">
+        <section class="hero animate__animated animate__fadeIn">
             <div class="container">
                 <div class="hero__inner">
                     <!-- Hero Media -->
@@ -410,7 +416,11 @@
             <!-- Service -->
             <section class="service" id="services">
                 <div class="container">
-                    <div class="service__inner">
+                    <div
+                        class="service__inner"
+                        data-aos="zoom-in"
+                        data-aos-anchor-placement="top-bottom"
+                    >
                         <p class="sub-heading">What we do for you?</p>
                         <h2 class="heading--lv2">Our Services</h2>
                         <div class="service__contents">
@@ -627,7 +637,7 @@
             <section
                 class="staff"
                 data-aos="zoom-in-up"
-                data-aos-anchor-placement="center-bottom"
+                data-aos-anchor-placement="top-center"
             >
                 <div class="container">
                     <div class="staff__inner">
@@ -815,7 +825,11 @@
             <!-- Pricing -->
             <section class="pricing">
                 <div class="container pricing-container">
-                    <div class="pricing__inner">
+                    <div
+                        class="pricing__inner"
+                        data-aos="zoom-in"
+                        data-aos-anchor-placement="top-bottom"
+                    >
                         <h2 class="heading--lv2">The Best Choice</h2>
                         <p class="pricing-desc desc--lv1">
                             We offer long-term and short-term boarding. Every
@@ -826,7 +840,7 @@
                         <div
                             class="pricing__plan"
                             data-aos="zoom-out-down"
-                            data-aos-anchor-placement="top-center"
+                            data-aos-anchor-placement="center-bottom"
                         >
                             <!-- Pricing Switch -->
                             <div class="pricing-switch">
@@ -982,7 +996,12 @@
             </section>
 
             <!-- Review -->
-            <section class="review" id="reviews">
+            <section
+                class="review animate__animated"
+                id="reviews"
+                data-aos="animate__fadeIn"
+                data-aos-anchor-placement="center-bottom"
+            >
                 <div class="container">
                     <div class="review__inner">
                         <div class="review__content">
@@ -1159,7 +1178,11 @@
             </section>
 
             <!-- Blog -->
-            <section class="blog">
+            <section
+                class="blog"
+                data-aos="fade-down"
+                data-aos-anchor-placement="center-bottom"
+            >
                 <div class="container">
                     <div class="blog__inner">
                         <div class="blog__top">
@@ -1179,7 +1202,7 @@
                         <div
                             class="blog__list"
                             data-aos="fade-down"
-                            data-aos-anchor-placement="top-center"
+                            data-aos-anchor-placement="center-bottom"
                         >
                             <!-- Blog Item 01 -->
                             <article class="blog-item">
@@ -1308,7 +1331,7 @@
                     <div
                         class="footer__left"
                         data-aos="fade-right"
-                        data-aos-anchor-placement="bottom-bottom"
+                        data-aos-anchor-placement="center-bottom"
                     >
                         <figure class="footer__logo">
                             <a href="#">
@@ -1439,7 +1462,7 @@
                     <div
                         class="footer-right"
                         data-aos="fade-left"
-                        data-aos-anchor-placement="bottom-bottom"
+                        data-aos-anchor-placement="center-bottom"
                     >
                         <div class="footer-right__item-list">
                             <!-- Item 1 -->
@@ -1542,9 +1565,11 @@
                 </div>
             </div>
         </footer>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
         <script>
-            AOS.init();
+            AOS.init({
+                useClassNames: true,
+            });
         </script>
     </body>
 </html>

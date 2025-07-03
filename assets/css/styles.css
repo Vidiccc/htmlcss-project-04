@@ -27,6 +27,14 @@ body {
     scroll-margin-top: 40px;
 }
 
+/*========== Fix AOS + Animate.CSS ============*/
+.animate__animated.aos-init {
+    visibility: hidden;
+}
+[data-aos].aos-animate {
+    visibility: visible;
+}
+
 /*========== Customized Reset CSS ============*/
 input,
 textarea,
