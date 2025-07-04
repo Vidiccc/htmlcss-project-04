@@ -1759,6 +1759,7 @@ h6 {
 
 .blog-item__date {
     margin-bottom: 24px;
+    display: block;
     color: #fff;
     font-family: Sora, sans-serif;
     font-size: 1.4rem;
