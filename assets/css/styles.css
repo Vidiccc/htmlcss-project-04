@@ -356,6 +356,7 @@ h6 {
         rgba(255, 255, 255, 0) 100%
     );
     animation: skeleton-loading 1.4s infinite linear;
+    pointer-events: none;
 }
 
 @keyframes skeleton-loading {
