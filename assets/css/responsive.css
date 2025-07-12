@@ -1,0 +1,109 @@
+/* All PC */
+@media screen and (min-width: 992px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .hide-on-desktop {
+        display: none;
+    }
+}
+
+/* Small PC */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .about__decor-01 {
+        display: none;
+    }
+}
+
+/* Table and mobile */
+@media screen and (max-width: 991.98px) {
+    /* Header - navbar */
+    .navbar {
+        display: none;
+    }
+
+    .header__inner {
+        /* justify-content: end; */
+        position: relative;
+    }
+
+    .header__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+
+    .sidebar-overlay {
+        /* display: none; */
+        position: fixed;
+        inset: 0;
+        background-color: #ececec;
+        opacity: 0.5;
+        z-index: 99;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    .mobile-sidebar__toggle:checked ~ .sidebar-overlay {
+        opacity: 0.5;
+        visibility: visible;
+    }
+
+    .mobile-sidebar__toggle:not(:checked) ~ .sidebar-overlay {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .mobile-drawer {
+        padding: 60px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        translate: -100% 0;
+        background-color: #fff;
+        z-index: 100;
+        transition: translate 0.3s;
+    }
+
+    .mobile-sidebar__toggle:checked ~ .mobile-drawer {
+        translate: 0 0;
+    }
+
+    .mobile__navbar {
+        margin-top: 32px;
+    }
+
+    .mobile__navbar .navbar__link {
+        display: block;
+        padding: 12px 0px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .sidebar-action {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .show-on-mobile {
+        display: block;
+    }
+
+    .mobile-drawer {
+        padding: 40px;
+        inset: 0 40% 0 0;
+    }
+
+    .sidebar-action {
+        margin-top: 8px;
+        border-top: 1px solid #ff5b2e;
+        padding-top: 20px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

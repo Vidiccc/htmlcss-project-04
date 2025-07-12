@@ -65,6 +65,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
 
         <!-- Animation -->
         <!-- Animate.CSS -->
@@ -84,12 +85,22 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
+                    <!-- Mobile sidebar toggle-->
+                    <label
+                        class="mobile-sidebar__label hide-on-desktop"
+                        for="mobile-sidebar-toggle"
+                    >
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <!-- Logo -->
                     <figure class="header__logo">
                         <a href="#">
                             <img src="./assets/icon/logo.svg" alt="Lucy" />
                         </a>
                     </figure>
 
+                    <!-- NavBar -->
                     <nav class="navbar">
                         <div class="navbar__item">
                             <a href="#" class="navbar__link active">Home</a>
@@ -112,6 +123,7 @@
                         </div>
                     </nav>
 
+                    <!-- Header CTA -->
                     <div class="header-action">
                         <a href="#!" class="header-action__link">Sign in</a>
                         <button class="header-action__btn btn">Sign up</button>
@@ -119,6 +131,56 @@
                 </div>
             </div>
         </header>
+
+        <!-- Mobile NavBar -->
+        <aside class="hide-on-desktop">
+            <!-- Sidebar Toggle -->
+            <input
+                type="checkbox"
+                class="mobile-sidebar__toggle"
+                id="mobile-sidebar-toggle"
+                hidden
+            />
+
+            <!-- Overlay -->
+            <label class="sidebar-overlay" for="mobile-sidebar-toggle"></label>
+
+            <div class="mobile-drawer">
+                <!-- Logo -->
+                <figure class="aside__logo">
+                    <a href="#">
+                        <img src="./assets/icon/logo.svg" alt="Lucy" />
+                    </a>
+                </figure>
+
+                <!-- Navbar -->
+                <nav class="mobile__navbar">
+                    <div class="navbar__item">
+                        <a href="#" class="navbar__link active">Home</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a href="#about" class="navbar__link">About</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a href="#services" class="navbar__link">
+                            Services & Rates
+                        </a>
+                    </div>
+                    <div class="navbar__item">
+                        <a href="#reviews" class="navbar__link">Reviews</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a href="#footer" class="navbar__link"> Contacts us </a>
+                    </div>
+                </nav>
+
+                <!-- Header CTA -->
+                <div class="sidebar-action show-on-mobile">
+                    <a href="#!" class="header-action__link">Sign in</a>
+                    <button class="header-action__btn btn">Sign up</button>
+                </div>
+            </div>
+        </aside>
 
         <!-- Hero -->
         <section class="hero animate__animated animate__fadeIn">
