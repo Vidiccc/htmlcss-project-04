@@ -1,4 +1,4 @@
-/* All PC */
+/* ========== All PC ========== */
 @media screen and (min-width: 992px) {
     body {
         overflow-x: hidden;
@@ -9,23 +9,26 @@
     }
 }
 
-/* Small PC */
+/* ========== Small PC ========== */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .about__decor-01 {
         display: none;
     }
 }
 
-/* Table and mobile */
+/* ========== Mobile - Tablet & Phone ========== */
 @media screen and (max-width: 991.98px) {
-    /* Header - navbar */
+    /* ===== Header - navbar ===== */
     .navbar {
         display: none;
     }
 
     .header__inner {
-        /* justify-content: end; */
         position: relative;
+    }
+
+    .mobile-sidebar__label i {
+        scale: 1.4;
     }
 
     .header__logo {
@@ -36,7 +39,6 @@
     }
 
     .sidebar-overlay {
-        /* display: none; */
         position: fixed;
         inset: 0;
         background-color: #ececec;
@@ -77,19 +79,53 @@
         display: block;
         padding: 12px 0px;
     }
+
+    /* ===== Hero ===== */
+    .hero__inner {
+        margin-top: 60px;
+        justify-content: center;
+    }
+
+    .hero__media {
+        display: none;
+    }
+
+    .hero__content {
+        width: 90%;
+        text-align: center;
+    }
+
+    .hero__content > * {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero__heading {
+        font-size: 5.5rem;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
 }
 
-/* Tablet */
+/* ========== Tablet ========== */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    /* ===== Header - navbar ===== */
     .sidebar-action {
         display: none;
     }
 }
 
-/* Mobile */
+/* ========== Phone ========== */
 @media screen and (max-width: 767.98px) {
-    .show-on-mobile {
+    .show-on-phone {
         display: block;
+    }
+
+    /* ===== Header - navbar ===== */
+    .header-action {
+        display: none;
     }
 
     .mobile-drawer {
@@ -105,5 +141,23 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+
+    /* ===== Hero ===== */
+    .hero__media {
+        display: none;
+    }
+
+    .hero__heading {
+        font-size: 4.5rem;
+    }
+
+    .hero__desc {
+        width: 95%;
+        height: auto;
+    }
+
+    .hero-cta {
+        flex-wrap: wrap;
     }
 }
