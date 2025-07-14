@@ -296,4 +296,18 @@
     .service__contents > .service-card:nth-child(7) {
         order: 3;
     }
+
+    /* === Staff === */
+    .staff__list {
+        flex-wrap: wrap;
+    }
+
+    .heading--lv3 {
+        font-size: 1.8rem;
+    }
+
+    .back-card__desc-inner,
+    .back-card__link {
+        font-size: 1.2rem;
+    }
 }
