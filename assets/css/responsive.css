@@ -165,6 +165,26 @@
         padding-left: 24px;
         padding-right: 24px;
     }
+
+    /* === Review === */
+    .review__list {
+        margin-left: 20px;
+        animation: none;
+    }
+
+    .review-item {
+        width: 110%;
+        align-items: flex-start;
+    }
+
+    .review-item__img-wrap {
+        /* top: 40px; */
+    }
+
+    .review-item__content {
+        margin-left: 40px;
+        top: 24px;
+    }
 }
 
 /* ========== Tablet ========== */
@@ -336,5 +356,46 @@
         grid-template-columns: 90%;
         grid-template-rows: repeat(3, 1fr);
         justify-content: center;
+    }
+
+    /* === Review === */
+    .review__content {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+    }
+
+    .review__btn {
+        top: 20px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .review__btn:nth-child(1) {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    .review__btn:nth-child(3) {
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+        justify-self: end;
+    }
+
+    .review__list-wrap {
+        grid-row: 1 / 2;
+        grid-column: 1 / 5;
+    }
+
+    .review-item {
+        width: 120%;
+    }
+
+    .review-item__img-wrap {
+        display: none;
+    }
+
+    .review-item__content {
+        margin-left: initial;
     }
 }
