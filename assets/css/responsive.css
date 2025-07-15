@@ -155,6 +155,16 @@
     .service__link {
         margin-top: 40px;
     }
+
+    /* === Pricing === */
+    .pricing__list {
+        gap: 28px;
+    }
+
+    .pricing-item {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
 
 /* ========== Tablet ========== */
@@ -280,7 +290,6 @@
     /* === Service === */
     .service__contents {
         grid-template-columns: 1fr;
-        /* grid-template-rows: 1fr 1fr 1fr; */
     }
 
     .service__contents > .service-card:nth-child(1),
@@ -309,5 +318,23 @@
     .back-card__desc-inner,
     .back-card__link {
         font-size: 1.2rem;
+    }
+
+    /* === Pricing === */
+    .pricing-desc {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .pricing__sale-off {
+        display: none;
+    }
+
+    .pricing__list {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
     }
 }
