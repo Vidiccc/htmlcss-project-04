@@ -177,13 +177,30 @@
         align-items: flex-start;
     }
 
-    .review-item__img-wrap {
-        /* top: 40px; */
-    }
-
     .review-item__content {
         margin-left: 40px;
         top: 24px;
+    }
+
+    /* === Blog === */
+    .blog__info {
+        width: 45%;
+        margin-right: initial;
+    }
+
+    .blog__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .blog-item a {
+        width: 100%;
+        display: block;
+    }
+
+    .blog-item__media {
+        width: 100%;
     }
 }
 
@@ -397,5 +414,30 @@
 
     .review-item__content {
         margin-left: initial;
+    }
+
+    /* === Blog === */
+    .blog__top {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .blog__info {
+        margin-top: 12px;
+        width: 90%;
+    }
+
+    .blog__list {
+        grid-template-columns: 1fr;
+        gap: 52px;
+    }
+
+    .blog-item__title {
+        margin-top: 20px;
+    }
+
+    .blog-item .desc--lv2 {
+        margin-top: 12px;
     }
 }
