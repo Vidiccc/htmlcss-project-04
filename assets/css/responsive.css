@@ -18,6 +18,10 @@
 
 /* ========== Mobile - Tablet & Phone ========== */
 @media screen and (max-width: 991.98px) {
+    body {
+        overflow-x: hidden;
+    }
+
     /* === Header - navbar === */
     .navbar {
         display: none;
@@ -154,6 +158,12 @@
 
     .service__link {
         margin-top: 40px;
+    }
+
+    /* === Staff === */
+    .staff__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* === Pricing === */
