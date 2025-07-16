@@ -202,6 +202,28 @@
     .blog-item__media {
         width: 100%;
     }
+
+    /* === Footer === */
+    .footer__left {
+        padding: 0;
+    }
+
+    .footer__left form {
+        max-width: 300px;
+    }
+
+    .footer-right {
+        margin-left: 100px;
+    }
+
+    .footer-right__item-list {
+        column-gap: 64px;
+        row-gap: 40px;
+    }
+
+    .footer__copyright {
+        margin-left: -48px;
+    }
 }
 
 /* ========== Tablet ========== */
@@ -439,5 +461,36 @@
 
     .blog-item .desc--lv2 {
         margin-top: 12px;
+    }
+
+    /* === Footer === */
+    .footer {
+        background-color: #fff6ed;
+    }
+
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+
+    .footer__left {
+        width: 100%;
+    }
+
+    .footer-social {
+        margin-top: 28px;
+    }
+
+    .footer-social .footer-heading {
+        font-size: 2rem;
+    }
+
+    .footer-right {
+        margin-top: 52px;
+        margin-left: initial;
+    }
+
+    .footer__copyright {
+        margin-left: initial;
+        text-align: center;
     }
 }
