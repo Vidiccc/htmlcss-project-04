@@ -83,6 +83,11 @@
 
 /* ========== Mobile - Tablet & Phone ========== */
 @media screen and (max-width: 991.98px) {
+    /* Fix AOS mobile layout */
+    html {
+        overflow-x: hidden;
+    }
+
     body {
         overflow-x: hidden;
     }
