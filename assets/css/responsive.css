@@ -89,7 +89,7 @@
     }
 
     body {
-        overflow-x: hidden;
+        overflow-x: clip;
     }
 
     /* === Header - navbar === */
@@ -341,9 +341,36 @@
         flex-wrap: wrap;
     }
 
+    header {
+        top: 0;
+    }
+
+    .mobile-sidebar__label {
+        position: absolute;
+        left: 0;
+    }
+
+    .header__inner {
+        justify-content: center;
+    }
+
+    .header__logo {
+        position: relative;
+        inset: 0;
+        translate: 0;
+    }
+
+    .header__logo img {
+        height: 32px;
+    }
+
     /* === Hero === */
     .hero__media {
         display: none;
+    }
+
+    .hero__content {
+        height: auto;
     }
 
     .hero__heading {
