@@ -393,6 +393,10 @@
         line-height: 1.19;
     }
 
+    .about {
+        padding-top: 128px;
+    }
+
     .about__list {
         grid-template-columns: 70%;
         margin-left: auto;
