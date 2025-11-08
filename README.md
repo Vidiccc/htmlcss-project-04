@@ -1,7 +1,5 @@
 # 🌟 Lucy Pet Care — Landing Page
 
-![Lucy Pet Care Preview](./docs/preview.png)
-
 A fully responsive landing page for a fictional pet care service.  
 Built from scratch using **HTML5** and **CSS3**, with custom animations and accessibility-ready design.
 
