@@ -24,8 +24,6 @@ Here are key UI/UX animations crafted for this project:
 | **Flip card**            | 3D flip transition on hover                    | ![Flip Demo](./docs/gif/flip-card.gif)            |
 | **Blob animated border** | Animated blob background following border path | ![Blob Demo](./docs/img/blob.jpg)                 |
 
-> Note: A combined preview GIF is included below for a quick overview.
-
 Includes additional custom effects such as **animated border highlight** and other subtle UI micro-interactions.  
 To see these and the full interactive experience (auto-carousel, scroll effects via AOS, and more), visit the [Live Demo](https://vidiccc.github.io/htmlcss-project-04/)
 
