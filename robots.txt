@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /signup.html
+Disallow: /signin.html
+
+Sitemap: https://vidiccc.github.io/htmlcss-project-04/sitemap.xml
